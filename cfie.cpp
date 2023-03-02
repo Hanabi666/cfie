@@ -47,6 +47,47 @@ void cfie::initCFIEValue(const float& alpha, const float& r_epsilon, const float
     mConstantValue.setSystemFreq(instantValue[0]);
     mConstantValue.setRelativeMediumParms(r_epsilon, r_mu);
     mSourceValue.setEfieldSource(instantValue[1], instantValue[2], instantValue[3]);
+    // 为vector分配空间
+    zE0.reserve(mMesh.lineNum);
+    zE1.reserve(mMesh.lineNum);
+    zH0.reserve(mMesh.lineNum);
+    zH1.reserve(mMesh.lineNum);
+    if (equation == PMCHWT)
+    {
+        vR.reserve(2 * mMesh.lineNum);
+    }else
+    {
+        vR.reserve(mMesh.lineNum);
+    }
+}
+
+void cfie::fillImpedanceL()
+{
+    for (int i = 0; i < mMesh.triangleNum; i++)
+    {
+        
+    }
+    
+}
+
+void cfie::fillImpedanceK()
+{
+}
+
+void cfie::calcInteractionOfSameL()
+{
+}
+
+void cfie::calcInteractionOfSameK()
+{
+}
+
+void cfie::calcInteractionOfDiffL()
+{
+}
+
+void cfie::calcInteractionOfDiffK()
+{
 }
 
 void cfie::outputInfo()

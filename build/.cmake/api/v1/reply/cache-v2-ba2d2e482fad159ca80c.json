@@ -187,10 +187,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "D:/Scoop/apps/mingw/current/bin/g++.exe"
 		},
 		{
@@ -331,10 +331,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "D:/Scoop/apps/mingw/current/bin/gcc.exe"
 		},
 		{
@@ -1611,11 +1611,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : "Path to a program."
 				}
 			],
-			"type" : "UNINITIALIZED",
-			"value" : ""
+			"type" : "FILEPATH",
+			"value" : "D:/Scoop/shims/git.exe"
 		},
 		{
 			"name" : "HGCOMMAND",

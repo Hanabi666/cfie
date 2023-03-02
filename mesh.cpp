@@ -47,6 +47,9 @@ vector<float> mesh::readRwgFile(const string& path)
         getline(infile, buff);
         istringstream ss(buff);
         ss >> this->nodeNum >> this->triangleNum >> this->lineNum;
+        this->nodeInfo.reserve(nodeNum);
+        this->lineInfo.reserve(lineNum);
+        this->Triangle.reserve(triangleNum);
         for (int i = 0; i < 4; i++)
         {
             getline(infile, buff);

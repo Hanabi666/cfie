@@ -3,7 +3,7 @@
 #include "triangle.h"
 class mesh
 {
-private:
+public:
     /* data */
     int nodeNum, triangleNum, lineNum;
     float maxX, maxY, maxZ, minX, minY, minZ;

@@ -18,6 +18,9 @@ private:
     string rwgFilePath;
     vector<vector<float>> factorE;
     vector<float> factorH;
+    vector<vector<float>> zE0, zE1;
+    vector<vector<float>> zH0, zH1;
+    vector<float> vR;
     enum INTEGRAL_EQUATION equation;
     float alpha;
     mesh mMesh;
@@ -29,6 +32,12 @@ public:
     ~cfie();
     void setRwgFilePath(const string& path);
     void initCFIEValue(const float &alpha, const float &r_epsilon, const float &r_mu);
+    void fillImpedanceL();
+    void fillImpedanceK();
+    void calcInteractionOfSameL();
+    void calcInteractionOfSameK();
+    void calcInteractionOfDiffL();
+    void calcInteractionOfDiffK();
     void outputInfo();
 };
 
