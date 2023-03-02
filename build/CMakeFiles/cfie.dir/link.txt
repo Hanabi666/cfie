@@ -1,0 +1,3 @@
+D:\Scoop\apps\cmake\3.25.1\bin\cmake.exe -E rm -f CMakeFiles\cfie.dir/objects.a
+D:\Scoop\apps\mingw\current\bin\ar.exe qc CMakeFiles\cfie.dir/objects.a @CMakeFiles\cfie.dir\objects1
+D:\Scoop\apps\mingw\current\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\cfie.dir/objects.a -Wl,--no-whole-archive -o cfie.exe -Wl,--out-implib,libcfie.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cfie.dir\linkLibs.rsp

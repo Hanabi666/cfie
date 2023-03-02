@@ -1,0 +1,7 @@
+[
+{
+  "directory": "E:/VSCodeProject/cfie/build",
+  "command": "D:\\Scoop\\apps\\mingw\\current\\bin\\g++.exe   -g -o CMakeFiles\\cfie.dir\\main.cpp.obj -c E:\\VSCodeProject\\cfie\\main.cpp",
+  "file": "E:/VSCodeProject/cfie/main.cpp"
+}
+]
