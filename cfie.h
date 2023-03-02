@@ -34,10 +34,10 @@ public:
     void initCFIEValue(const float &alpha, const float &r_epsilon, const float &r_mu);
     void fillImpedanceL();
     void fillImpedanceK();
-    void calcInteractionOfSameL();
-    void calcInteractionOfSameK();
-    void calcInteractionOfDiffL();
-    void calcInteractionOfDiffK();
+    void calcInteractionOfSameL(int io);
+    void calcInteractionOfSameK(int io);
+    void calcInteractionOfDiffL(int io, int js);
+    void calcInteractionOfDiffK(int io, int js);
     void outputInfo();
 };
 

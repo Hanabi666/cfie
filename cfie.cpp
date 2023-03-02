@@ -1,5 +1,6 @@
 #include "cfie.h"
 #include <iostream>
+#include "mathUtils.h"
 
 cfie::cfie()
 {
@@ -74,19 +75,22 @@ void cfie::fillImpedanceK()
 {
 }
 
-void cfie::calcInteractionOfSameL()
+void cfie::calcInteractionOfSameL(int io)
+{
+
+}
+
+void cfie::calcInteractionOfSameK(int io)
+{
+    auto gs = getGaussCoff(7);
+    
+}
+
+void cfie::calcInteractionOfDiffL(int io, int js)
 {
 }
 
-void cfie::calcInteractionOfSameK()
-{
-}
-
-void cfie::calcInteractionOfDiffL()
-{
-}
-
-void cfie::calcInteractionOfDiffK()
+void cfie::calcInteractionOfDiffK(int io, int js)
 {
 }
 
